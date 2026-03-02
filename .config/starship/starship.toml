@@ -8,4 +8,4 @@ disabled = true
 [custom.main_branch]
 when = '[ "$(git branch --show-current)" = "main" ]'
 command = ""
-format = "[MAIN,MAIN,MAIN,MAIN](bold red)"
+format = "\n[MAIN ](bold #FF0000)[MAIN ](bold #FF7F00)[MAIN ](bold #FFFF00)[MAIN ](bold #00FF00)[MAIN ](bold #0000FF)[MAIN ](bold #4B0082)[MAIN ](bold #8B00FF)"
