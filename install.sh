@@ -19,6 +19,14 @@ else
     echo "Stow already installed."
 fi
 
+# Install eza
+if ! command -v eza &>/dev/null; then
+    echo "Installing eza..."
+    sudo apt install -y eza
+else
+    echo "eza already installed."
+fi
+
 # Install uv (Python package manager)
 if ! command -v uv &>/dev/null; then
     echo "Installing uv..."
