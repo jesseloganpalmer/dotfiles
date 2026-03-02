@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = jlp74@cam.ac.uk
+	name = jesseloganpalmer
+[push]
+	autoSetupRemote = true
