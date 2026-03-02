@@ -36,6 +36,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias eza='eza -la --git'
 
 # Load custom aliases
 if [ -f ~/.bash_aliases ]; then
