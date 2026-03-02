@@ -19,13 +19,14 @@ else
     echo "Stow already installed."
 fi
 
-# Install eza
-if ! command -v eza &>/dev/null; then
-    echo "Installing eza..."
-    sudo apt install -y eza
-else
-    echo "eza already installed."
-fi
+# Install eza (from official repo for latest version with theme support)
+echo "Setting up eza repository..."
+sudo mkdir -p /etc/apt/keyrings
+wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg 2>/dev/null || true
+echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list >/dev/null
+sudo apt update -qq
+echo "Installing eza..."
+sudo apt install -y eza
 
 # Install uv (Python package manager)
 if ! command -v uv &>/dev/null; then

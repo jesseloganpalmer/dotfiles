@@ -63,4 +63,5 @@ if [ -f ~/.bashrc_secrets ]; then
 fi
 
 # --- Starship prompt ---
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init bash)"
