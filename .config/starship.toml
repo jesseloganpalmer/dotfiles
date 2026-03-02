@@ -1,0 +1,11 @@
+
+[package]
+disabled = true
+
+[python]
+disabled = true
+
+[custom.main_branch]
+when = '[ "$(git branch --show-current)" = "main" ]'
+command = ""
+format = "[MAIN,MAIN,MAIN,MAIN](bold red)"
