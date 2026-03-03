@@ -1,7 +1,8 @@
 https://www.nerdfonts.com/font-downloads
-Then Fira Code Nerd Font
-Extract all then Select all
-Install
+Select Fira Code Nerd Font
+Extract all
+Install (not in remote)
+Update settings.json
 
 install files
 
