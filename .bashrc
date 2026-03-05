@@ -33,9 +33,9 @@ fi
 
 # --- Aliases ---
 alias ll='ls -alF'
-alias la='ls -A'
+alias la='eza -la --git --icons'
 alias l='ls -CF'
-alias ls='eza -la --git --icons'
+alias ls='eza -l --git --icons'
 
 # Load custom aliases
 if [ -f ~/.bash_aliases ]; then
