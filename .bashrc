@@ -36,6 +36,8 @@ alias ll='ls -alF'
 alias la='eza -la --git --icons'
 alias l='ls -CF'
 alias ls='eza -l --git --icons'
+alias m='make'
+alias uvr='uv run'
 
 # Load custom aliases
 if [ -f ~/.bash_aliases ]; then
