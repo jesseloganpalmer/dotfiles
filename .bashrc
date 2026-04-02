@@ -38,6 +38,9 @@ alias l='ls -CF'
 alias ls='eza -l --git --icons'
 alias m='make'
 alias uvr='uv run'
+alias mp='uv run mypy .'
+alias rc='uv run ruff check'
+alias rcf='uv run ruff check --fix'
 
 # Load custom aliases
 if [ -f ~/.bash_aliases ]; then
