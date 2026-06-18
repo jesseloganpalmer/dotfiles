@@ -36,11 +36,11 @@ alias ll='ls -alF'
 alias la='eza -la --git --icons'
 alias l='ls -CF'
 alias ls='eza -l --git --icons'
-alias m='make'
 alias uvr='uv run'
 alias mp='uv run mypy .'
 alias rc='uv run ruff check'
 alias rcf='uv run ruff check --fix'
+alias multipull='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;'
 
 # Load custom aliases
 if [ -f ~/.bash_aliases ]; then
